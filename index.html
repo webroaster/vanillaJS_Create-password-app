@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パスワードランダム生成</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <section class="section">
+        <h2 class="title">パスワードランダム生成</h2><!-- /.title -->
+        <p class="description">
+            桁数と、記号の有無を入力して生成するボタンをクリックしてください。
+        </p><!-- /.description -->
+        <div class="digits">
+            <label for="digits">桁数</label>
+            <input type="number" id="digits" name="digits" value="10">
+        </div><!-- /.digits -->
+        <form id="str" class="symbol">
+            <label><input type="radio" name="symbol" value="strOnly" checked>記号なし</label>
+            <label><input type="radio" name="symbol" value="strSymbol">記号あり</label>
+        </form><!-- /.digits -->
+
+        <button onclick="random()">生成する</button>
+
+        <p id="result">　</p><!-- /#result -->
+    </section><!-- /.section -->
+
+    <script src="./assets/index.js"></script>
+</body>
+</html>
